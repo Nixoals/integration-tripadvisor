@@ -8,23 +8,103 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<title>Tourisme à Paris:2022 visiter</title>
 	</head>
 	<body>
 		<header>
-			<div>
-				<nav class="container">
+			<div class="container">
+				<nav>
 					<div class="nav-left">
 						<img src="./assets/img/logo-trip.svg" alt="logo-tripadvisor" />
 						<div class="search-bar">
-							<ion-icon name="search-outline" class="nav-icon"></ion-icon>
+							<ion-icon name="search-outline" class="main-icon"></ion-icon>
 						</div>
 					</div>
-					<div class="nav-right"></div>
+					<div class="nav-right">
+						<div class="nav-right-wrapper">
+							<div>
+								<ion-icon name="pencil-outline" class="main-icon"></ion-icon>
+								<h2>Avis</h2>
+							</div>
+							<div>
+								<ion-icon name="heart-outline" class="main-icon"></ion-icon>
+								<h2>Voyage</h2>
+							</div>
+							<div>
+								<i class="fa-regular fa-bell main-icon"></i>
+								<h2>Alerte</h2>
+							</div>
+							<div>
+								<h2>connectez-vous</h2>
+							</div>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</header>
-		<main></main>
+		<main class="container">
+			<section class="container">
+				<div class="city-explorer">
+					<div class="title-city">
+						<div><span>Explorer </span>Paris</div>
+						<p>Les revenus influencent le choix des expériences présentées sur cette page : en savoir plus.</p>
+					</div>
+					<div class="action-to-city">
+						<div class="action-row-top">
+							<div>
+								<h2>Hôtels</h2>
+								<ion-icon name="bed-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>Locations de vacances</h2>
+								<ion-icon name="home-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>Activities</h2>
+								<ion-icon name="ticket-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>Restaurants</h2>
+								<ion-icon name="restaurant-outline" class="main-icon"></ion-icon>
+							</div>
+						</div>
+
+						<div class="action-row-bottom">
+							<div>
+								<h2>Forum de voyage</h2>
+								<ion-icon name="chatbubbles-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>vols</h2>
+								<ion-icon name="airplane-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>Croisières</h2>
+								<ion-icon name="boat-outline" class="main-icon"></ion-icon>
+							</div>
+							<div>
+								<h2>Plus</h2>
+								<p class="main-icon">...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="picture-container">
+					<div class="picture-left">
+						<img class="big-picture" src="./assets/img/left.jpg" alt="" />
+					</div>
+					<div class="picture-right">
+						<img class="small-picture" src="./assets/img/righttop.jpg" alt="" />
+						<img class="small-picture" src="./assets/img/rightbottom.jpg" alt="" />
+					</div>
+				</div>
+			</section>
+			<section></section>
+		</main>
 		<footer></footer>
 	</body>
 </html>

@@ -18,12 +18,15 @@ body{
 .container{
     max-width: 1140px;
     margin: auto;
+    padding: 0 24px;
     align-items: center;
 }
 
 header nav{
     height: 60px;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-left{
@@ -51,8 +54,125 @@ header nav img{
     align-items: center;
 }
 
-
-
-.search-bar .nav-icon{
-    font-size: 25px;
+.main-icon{
+    font-size: 22px;
 }
+
+.nav-right{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+}
+
+.nav-right-wrapper div{
+    display: flex;
+    padding: 0 6px;
+    align-items: flex-end;
+    border-radius: 20px;
+    height: 40px;
+    align-items: center;
+}
+.nav-right-wrapper div:last-child{
+    background-color: black;
+    color: white;
+}
+
+.nav-right-wrapper div:hover{
+    background-color: rgb(224, 223, 223);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.nav-right-wrapper div:last-child:hover{
+    background-color: rgb(79, 78, 78);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.city-explorer{
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    padding: 32px 0 24px 0;
+    justify-content: space-evenly;
+}
+
+.title-city{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.title-city div{
+    font-size: 54px;
+    font-weight: bold;
+}
+.title-city div span{
+    color: #FE5D5D;
+}
+
+.title-city p{
+    color: #333333;
+    font-size: 14px;
+}
+
+.action-to-city{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.action-row-top{
+    display: flex;
+    height: 68px;
+    
+
+}
+.action-row-top div{
+    margin: 0 10px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 12px;
+    flex: 1;
+    padding: 11px 16px
+}
+
+.action-row-bottom{
+    display: flex;
+    height: 68px;
+    
+
+}
+.action-row-bottom div{
+    margin: 0 10px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 12px;
+    flex: 1;
+    padding: 11px 16px
+}
+
+.action-row-bottom div:hover, .action-row-top div:hover{
+    background-color: black;
+    color: white;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
