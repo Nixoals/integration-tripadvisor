@@ -48,7 +48,7 @@ header nav img{
     padding: 0 12px;
     border: 1px solid gray;
     border-radius: 21px;
-    min-width: 350px;
+    min-width: 335px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -69,17 +69,23 @@ header nav img{
 .nav-right-wrapper{
     display: flex;
     justify-content: space-evenly;
-    width: 450px;
+    /* width: 450px; */
 }
 
 .nav-right-wrapper div{
     display: flex;
     padding: 0 6px;
+    margin-left: 10px;
     align-items: flex-end;
     border-radius: 20px;
     height: 40px;
     align-items: center;
 }
+
+/* .nav-right-wrapper div:last-child{
+    width: 135px;
+} */
+
 .nav-right-wrapper div:last-child{
     background-color: black;
     color: white;
@@ -123,7 +129,7 @@ h2{
     color: #FE5D5D;
 }
 
-.title-city p{
+p{
     color: #333333;
     font-size: 14px;
 }
@@ -191,12 +197,34 @@ h2{
 .picture-left{
     flex: 2;
     object-fit: contain;
+    margin-right: 5px;
 
 }
 
 .picture-left img{
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
 }
 .picture-right img{
-    max-height: 50%;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
 }
+
+ @media (max-width:1024px){
+    .nav-right .nav-title{
+        display: none ;
+    } 
+ }
+
+
+ .pictures-bottom-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+ }
+
+  
