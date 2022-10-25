@@ -176,3 +176,27 @@ h2{
     cursor: pointer;
 }
 
+.picture-container{
+    display: flex;
+    flex-direction: row ;
+    height: 276px;
+}
+
+.picture-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.picture-left{
+    flex: 2;
+    object-fit: contain;
+
+}
+
+.picture-left img{
+    max-height: 100%;
+}
+.picture-right img{
+    max-height: 50%;
+}
