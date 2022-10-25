@@ -219,12 +219,81 @@ p{
     } 
  }
 
-
  .pictures-bottom-text{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 0 35px 0;
  }
 
-  
+.description-comment{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left-pannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-pannel{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.right-pannel-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    border-radius: 25px 25px 0 0  ;
+    padding: 20px 20px;
+    background-color: #FE5D5D;
+    min-height: 250px;
+}
+
+.right-pannel-text h1{
+    font-size: 35px;
+}
+
+.create-travel{
+    border-radius: 22px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    width: 150px;
+    
+}
+.left-pannel h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.left-pannel p{
+    font-size: 20px;
+}
+
+.map-paris img{
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 230px;
+}
+
+
+footer{
+    margin: auto;
+    padding: 70px; 
+    text-align: center;
+}
