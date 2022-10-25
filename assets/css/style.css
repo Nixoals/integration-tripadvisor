@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Trip Sans Reg";
+    src: url("../fonts/TripSans-Regular.eot");
+    src: url("../fonts/TripSans-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/TripSans-Regular.woff2") format("woff2"),
+      url("../fonts/TripSans-Regular.woff") format("woff"),
+      url("../fonts/TripSans-Regular.ttf") format("truetype"),
+      url("../fonts/TripSans-Regular.svg#TripSans-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: "Trip Sans Reg";
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+    align-items: center;
+}
+
+header nav{
+    height: 60px;
+    align-items: center;
+}
+
+.nav-left{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav img{
+    height: 40px;
+    padding-right: 30px;
+    
+}
+
+.search-bar{
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid gray;
+    border-radius: 21px;
+    min-width: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.search-bar .nav-icon{
+    font-size: 25px;
+}
