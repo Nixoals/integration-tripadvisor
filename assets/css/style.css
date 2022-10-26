@@ -59,22 +59,19 @@ header{
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    margin: auto;
     max-width: 1188px;
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 1;
-
-    
+    border-radius: 20px;
     
 }
 
 .nav-left{
     height: 60px;
     display: flex;
-
     justify-content: flex-start;
     align-items: center;
     flex: 1;
@@ -133,7 +130,7 @@ header nav img{
     border-radius: 20px;
     height: 40px;
     align-items: center;
-    gap: 10px;
+    gap: 17px;
 }
 
 /* .nav-right-wrapper div:last-child{
@@ -484,8 +481,6 @@ p{
     justify-content: space-between;
 }
 
-
-
 .heart{
     display: flex;
     background: white;
@@ -522,22 +517,6 @@ p{
 
 
 
-
-
-
-
-
-
-
-footer{
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: #F9F0EC;
- height: 160px;
- gap: 20px;
-}
-
 footer div{
     font-family: "Trip Sans Regular";
     font-size: 18px;
@@ -546,3 +525,78 @@ footer div{
 footer span{
     font-family: "Trip Sans Medium";
 }
+
+.escape-section{
+    display: flex;
+    width: 100%;
+    background-color: #F9F1EC;
+    height: 186px;
+    margin: 50px 0 50px 0;
+    
+}
+
+.escape-left-pannel{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.escape-left-pannel h1{
+    padding: 40px 10px 0 20px;
+    font-size: 24px;
+}
+.escape-left-pannel h2{
+    font-size: 16px;
+    font-family: "Trip Sans Regular";
+    padding: 10px 10px 10px 20px;
+}
+.escape-left-pannel button{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 48px;
+    width: 127px;
+    margin: 35px 0 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.escape-left-pannel button:hover{
+    background-color: #333333;
+    transition: all 0.3s ease
+}
+
+
+
+.escape-right-pannel{
+    display: flex;
+    background-image: url("../img/TravelersChoice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.escape-right-pannel:hover{
+    background-size: 105%;
+    transition: all 0.3s ease-in-out;
+}
+.escape-right-pannel img{
+    height: 100px;
+    width: 100px;
+    padding: 0 15px 15px 0;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F0EC;
+    height: 160px;
+    gap: 20px;
+   }
