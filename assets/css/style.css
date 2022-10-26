@@ -24,8 +24,6 @@
     font-display: swap;
 }
 
-
-
 h1{
     font-family: "Trip Sans Medium";
     font-size: 28px;
@@ -46,18 +44,37 @@ body{
     padding: 0 24px;
     align-items: center;
 }
+header{
+    height: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
 
-header nav{
+
+.fixed-nav{
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    max-width: 1188px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+
+    
+    
 }
 
 .nav-left{
     height: 60px;
     display: flex;
-    flex-direction: row;
+
     justify-content: flex-start;
     align-items: center;
     flex: 1;
