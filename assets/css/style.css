@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Trip Sans Reg";
+    font-family: "Trip Sans Regular";
     src: url("../fonts/TripSans-Regular.eot");
     src: url("../fonts/TripSans-Regular.eot?#iefix") format("embedded-opentype"),
       url("../fonts/TripSans-Regular.woff2") format("woff2"),
@@ -11,9 +11,34 @@
     font-display: swap;
 }
 
-body{
-    font-family: "Trip Sans Reg";
+@font-face {
+    font-family: 'Trip Sans Medium';
+    src: url('../fonts/TripSans-Medium.eot');
+    src: url('../fonts/TripSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSans-Medium.woff2') format('woff2'),
+        url('../fonts/TripSans-Medium.woff') format('woff'),
+        url('../fonts/TripSans-Medium.ttf') format('truetype'),
+        url('../fonts/TripSans-Medium.svg#TripSans-Medium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
+
+
+
+h1{
+    font-family: "Trip Sans Medium";
+    font-size: 28px;
+}
+
+h2{
+    font-family: "Trip Sans Medium";
+}
+
+body{
+    font-family: "Trip Sans Regular";
+}
+
 
 .container{
     max-width: 1140px;
@@ -57,7 +82,7 @@ header nav img{
 
 .search-bar input{
     font-size: 16px;
-    /* width: 100%; */
+    width: 80%;
     height: 80%;
     border-color: transparent;
     outline: none;
@@ -79,6 +104,7 @@ header nav img{
 .nav-right-wrapper{
     display: flex;
     justify-content: space-evenly;
+
     /* width: 450px; */
 }
 
@@ -90,6 +116,7 @@ header nav img{
     border-radius: 20px;
     height: 40px;
     align-items: center;
+    gap: 10px;
 }
 
 /* .nav-right-wrapper div:last-child{
@@ -134,6 +161,7 @@ h2{
 }
 
 .title-city div{
+    font-family: "Trip Sans Medium";
     font-size: 54px;
     font-weight: bold;
 }
@@ -150,17 +178,20 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 
 }
 
 .action-row-top{
     display: flex;
-    height: 68px;
+    height: 60px;
+    gap: 15px;
+    justify-content: space-between;
     
 
 }
 .action-row-top div{
-    margin: 0 10px 10px 0;
+    /* margin: 0 10px 10px 0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,12 +203,12 @@ p{
 
 .action-row-bottom{
     display: flex;
-    height: 68px;
+    height: 60px;
+    gap: 15px;
     
 
 }
 .action-row-bottom div{
-    margin: 0 10px 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,18 +229,20 @@ p{
     display: flex;
     flex-direction: row ;
     height: 372px;
+    gap: 5px;
 }
 
 .picture-right{
     display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 5px;
 }
 
 .picture-left{
     flex: 2;
     object-fit: contain;
-    margin-right: 5px;
+    
 
 }
 
@@ -242,6 +275,7 @@ p{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .left-pannel{
@@ -300,6 +334,10 @@ p{
 
 .left-pannel p{
     font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    line-height: 25px;
+    
 }
 
 .map-paris img{
@@ -310,8 +348,184 @@ p{
 }
 
 
+.city-unmissable{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 300px;
+    gap: 10px;
+    
+    
+}
+
+.description-pannel{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* min-width: 271px; */
+    flex: 1;
+}
+
+.description-pannel h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.description-pannel p{
+    font-size: 18px;
+}
+
+.description-pannel p{
+    font-size: 16px;
+}
+
+.scrollable-content{
+    display: flex;
+    flex: 3;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.unmissable-content{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 230px;
+    gap: 20px;
+}
+
+.unmissable-image1{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/1-20180601-122841-largejpg.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+
+.unmissable-image2{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/2-arc-de-triomphe-at-night.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+.unmissable-image3{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/3-basilica-del-sagrado.jpg');
+    /* background-size: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+.unmissable-image4{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/4-cour-napoleon-et-pyramide.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+.unmissable-image5{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/5-eiffeltoren.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+.unmissable-image6{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/7-marche-vernaison-maison.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+.unmissable-image7{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/unmissables-img/6-leider-durch-das-feuer.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    justify-content: space-between;
+}
+
+
+
+.heart{
+    display: flex;
+    background: white;
+    align-self: flex-end;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prize{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-self: flex-start;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 7px;
+    border-radius:  30% 30% 20% 20%;
+    font-size: 10px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.unmissable-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
-    margin: auto;
-    padding: 70px; 
-    text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #F9F0EC;
+ height: 160px;
+ gap: 20px;
+}
+
+footer div{
+    font-family: "Trip Sans Regular";
+    font-size: 18px;
+}
+
+footer span{
+    font-family: "Trip Sans Medium";
 }
