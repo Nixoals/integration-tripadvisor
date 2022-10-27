@@ -69,6 +69,15 @@ header{
     
 }
 
+.nav-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+
 .nav-left{
     height: 60px;
     display: flex;
@@ -162,9 +171,10 @@ h2{
 .city-explorer{
     display: flex;
     flex-direction: column;
-    height: 290px;
-    padding: 32px 0 24px 0;
-    justify-content: space-evenly;
+    min-height: 180px;
+    padding: 32px 0 15px 0;
+    /* justify-content: space-between; */
+    gap: 40px;
 }
 
 .title-city{
@@ -272,11 +282,6 @@ p{
     object-fit: cover;
 }
 
- @media (max-width:1024px){
-    .nav-right .nav-title{
-        display: none ;
-    } 
- }
 
  .pictures-bottom-text{
     display: flex;
@@ -394,10 +399,11 @@ p{
 
 .scrollable-content{
     display: flex;
-    flex: 3;
+    flex: 2;
     flex-shrink: 0;
     overflow-x: scroll;
     gap: 10px;
+
 }
 
 .unmissable-content{
@@ -407,6 +413,9 @@ p{
     height: 100%;
     min-width: 230px;
     gap: 20px;
+    flex: 33.3333%;
+    
+
 }
 
 .unmissable-image1{
@@ -600,3 +609,134 @@ footer{
     height: 160px;
     gap: 20px;
    }
+
+
+@media (max-width:1024px){
+.nav-right .nav-title{
+    display: none ;
+} 
+}
+
+@media (min-width:1184px){
+    .action-to-city{
+        flex-direction: row;
+        flex: 0;
+    }
+    .action-row-bottom{
+        flex: 2;
+    }
+    .action-row-top{
+        flex: 4;
+    }
+    .action-row-bottom .flight-item{
+        display: none;
+    }
+    .action-row-bottom .cruise-item{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .fixed-nav{
+        height: 50px;
+    }
+    .nav-mobile{
+        display: flex;
+    }
+    .nav-left, .nav-right{
+        display: none;
+    }
+    .mobile-icon{
+        font-size: 24px;
+        padding-right: 0;
+        cursor: pointer;
+    }
+    .nav-mobile img{
+        height: 30px;
+        justify-content: center;
+    }
+    .action-to-city{
+        flex-direction: row;
+        flex-shrink: 0;
+        overflow-x: scroll;
+        align-items: flex-end;
+        gap: 95px;
+    }
+    .action-row-bottom div{
+        gap: 5px;
+        min-width: 150px;
+        align-items: center;
+        max-height: 40px;
+        box-sizing: border-box;
+        flex: 0 0 auto;
+    }
+    
+    .action-row-bottom h2{
+        flex-shrink: 0;
+        align-items: center;
+    }
+    .action-row-top div{
+        gap: 5px;
+        min-width: 150px;
+        align-items: center;
+        max-height: 40px;
+        box-sizing: border-box;
+        flex: 0 0 auto;
+    }
+    .action-row-top h2{
+        flex-shrink: 0;
+        align-items: center;
+    }
+    .picture-container .picture-left{
+        flex: 1;
+        
+    }
+    .picture-container .picture-right{
+        display: none;
+    }
+
+    /* les imanquables */
+    .city-unmissable{
+        flex-direction: column;
+        height: 632px;
+        justify-content: flex-start;
+    }
+    .city-unmissable .description-pannel{
+        flex: 1;
+    }
+    .city-unmissable .scrollable-content{
+        flex: 3;
+    }
+
+    .unmissable-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-width: 570px;
+        min-height: 600;
+        gap: 20px;   
+    }
+    .unmissable-content .mobile-resize{
+        flex: 5;
+    }
+    .unmissable-content .unmissable-description{
+        flex: 1;
+    }
+
+
+
+
+    .description-comment{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description-comment .right-pannel{
+        margin: auto;
+    }
+
+    .description-comment .left-pannel{
+        margin: auto;
+    }
+
+}
